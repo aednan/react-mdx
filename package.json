@@ -1,0 +1,19 @@
+{
+  "private": true,
+  "name": "@mdx-deck/react-mdx",
+  "version": "4.1.1",
+  "scripts": {
+    "start": "mdx-deck src/ReactP.mdx",
+    "build": "mdx-deck build src/ReactP.mdx",
+    "help": "mdx-deck"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/aednan/react-mdx.git"
+  },
+  "author": "Adnan EL",
+  "homepage": "https://github.com/aednan",
+  "devDependencies": {
+    "mdx-deck": "^3.1.0"
+  }
+}

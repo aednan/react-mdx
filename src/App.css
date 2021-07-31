@@ -1,0 +1,49 @@
+
+
+.slide_span_ow{
+  color: rgb(12, 235, 223);
+  margin-top: 200px;
+  font-size: 20px;
+}
+.main_slide_h1{
+   background-color: red;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 3px;
+    padding: 0px 15px 0px 15px;
+    color: aqua;
+  }
+
+.slide_h1{
+
+    background-color: red;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 3px;
+    padding: 0px 15px 0px 15px;
+
+}
+.slide3_p{
+
+    background-color: green;
+    text-align: center;
+    border-radius: 3px;
+    padding: 0px 10px 0px 10px;
+
+}
+
+.counter-b{
+   padding: 20px;
+   font-size: 50px;
+   background-color: rgb(0, 217, 255);
+   border-radius: 5px;
+   border: none;
+   align-content: center;
+   cursor: pointer;
+}
+
+.slide_img{
+    height: 650px;
+    width: 1300px;
+    border-radius: 7px;
+}

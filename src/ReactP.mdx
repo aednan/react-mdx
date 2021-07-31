@@ -1,0 +1,232 @@
+import { themes } from 'mdx-deck'
+import Counter from "./component/Counter.jsx"
+import Slide from "./component/Slide.jsx"
+import Slide1 from "./component/Slide1.jsx"
+import Slide2 from "./component/Slide2.jsx"
+import Slide4 from "./component/Slide4.jsx"
+import SlideVDOM from "./component/SlideVDOM.jsx"
+
+
+export const theme = themes.big;
+
+<Head>
+  <title>React</title>
+</Head>
+
+<Slide/>
+
+---
+
+<Slide1/>
+
+---
+
+<Slide2/>
+
+---
+
+<Slide4/>
+
+---
+
+# React Function Component
+
+```jsx
+function Welcome(props) {
+  return <h1>Hello, {props.name}</h1>;
+}
+```
+
+---
+
+# React Class Component
+
+```jsx
+class Welcome extends React.Component {
+  render() {
+    return <h1>Hello, {this.props.name}</h1>;
+  }
+}
+```
+
+---
+
+<h1 style={{ padding: '15px', backgroundColor: 'red', borderRadius: '3px'}} >Component lifecycle</h1>
+
+
+###### https://reactjs.org/docs/react-component.html
+---
+
+# ComponentDidMount
+
+```jsx
+
+ componentDidMount() {
+
+ }
+
+```
+
+---
+
+# ComponentDidUpdate
+
+```jsx
+
+ componentDidUpdate(prevProps, prevState, snapshot) {
+   
+ }
+
+```
+
+---
+
+# ComponentWillUnmount
+
+```jsx
+
+ ComponentWillUnmount() {
+   
+ }
+
+```
+###### https://reactjs.org/docs/react-component.html
+
+---
+
+<h1 style={{ padding: '15px', backgroundColor: 'red', borderRadius: '3px'}} >React Hooks</h1>
+
+###### https://reactjs.org/docs/hooks-intro.html
+
+---
+### componentDidMount & componentDidUpdate
+
+```jsx
+useEffect(() =>{   
+console.log("On Mount & on Update");
+});
+```
+
+---
+## componentDidMount
+
+```jsx
+
+useEffect(() =>{   
+console.log("on Mount");
+  }, []);
+
+```
+
+---
+### componentDidMount & componentDidUnmount
+
+```jsx
+useEffect(() =>{   
+console.log("on Mount");
+
+// componentDidUnmount
+return () =>{
+console.log("on unmount");
+}
+  }, []);
+```
+
+---
+
+<h1 style={{ padding: '15px', backgroundColor: 'red', borderRadius: '3px'}} >React JSX</h1>
+
+```jsx
+const element = <h1>Hello, world!</h1>;
+```
+
+###### https://reactjs.org/docs/react-without-jsx.html
+---
+
+<h1 style={{ padding: '15px', backgroundColor: 'red', borderRadius: '3px'}} >React Component Props</h1>
+
+###### https://reactjs.org/docs/components-and-props.html
+---
+
+<h1 style={{ padding: '15px', backgroundColor: 'red', borderRadius: '3px'}} >React State</h1>
+
+###### https://reactjs.org/docs/state-and-lifecycle.html
+---
+
+<h1 style={{ padding: '15px', backgroundColor: 'red', borderRadius: '3px'}} >React Context</h1>
+
+<span style={{ fontSize: '30px', color: 'rgb(0, 217, 255)'}} >https://reactjs.org/docs/context.html</span>
+
+```jsx
+// React.createContext 
+const MyContext = React.createContext(defaultValue);
+
+// Context.Provider 
+<MyContext.Provider value={/* some value */}>
+
+// Context.Consumer 
+<MyContext.Consumer>
+  {value => /* render something based on the context value */}
+</MyContext.Consumer>
+```
+
+---
+
+<SlideVDOM/>
+
+---
+
+<h1 style={{ padding: '15px', backgroundColor: 'red', borderRadius: '3px'}} >React Static Type Checking</h1>
+
+###### Flow: https://flow.org TypeScript: https://www.typescriptlang.org  
+###### https://reactjs.org/docs/static-type-checking.html 
+
+---
+
+<h1 style={{ padding: '15px', backgroundColor: 'red', borderRadius: '3px'}} >React Ecosystem</h1>
+
+```
+Routing and Navigation in Reactjs:
+- React Router
+State Management:
+- React Redux
+- React Mobx
+- React Apollo Client
+Augment Reality/ Virtual Reality (AR/ VR):
+- React 360
+Testing:
+- Jest / Enzyme / RTL
+- Cypress
+```
+
+---
+
+<h1 style={{ padding: '15px', backgroundColor: 'red', borderRadius: '3px'}} >Beispiel</h1>
+
+```jsx
+import React, {useState} from 'react'
+function Counter () {
+  const [count, setCount] = useState(0);
+
+  return (
+  <div>
+<h1> Count {count}</h1>
+<button className="counter-b" 
+onClick={() => setCount(c=>c + 1)}>
+Increment </button>
+ </div>); }
+```
+---
+
+<Counter/>
+
+---
+
+# END
+
+
+<div>
+<span className="slide_span_ow" > This presentation was made using React & mdx-deck  </span> 
+<span className="slide_span_ow" style={{ color: 'tomato'}}> https://reactjs.org </span>
+</div>
+
